@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paint</title>
+    <title>Paint App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="toolbar">
-        <button id="clear">Очистити</button>
-        <input type="color" id="colorPicker" value="#000000">
-        <input type="range" id="brushSize" min="1" max="20" value="5">
+        <button id="pencil" class="tool">Карандаш</button>
+        <button id="brush" class="tool">Пензлик</button>
+        <button id="eraser" class="tool">Стирачка</button>
+        <button id="fill" class="tool">Заливка</button>
+        <button id="eyedropper" class="tool">Пипетка</button>
+        <button id="line" class="tool">Лінія</button>
+        <button id="rectangle" class="tool">Прямокутник</button>
+        <button id="circle" class="tool">Коло</button>
+        <input type="color" id="color-picker">
     </div>
     <canvas id="canvas"></canvas>
+
     <script src="script.js"></script>
 </body>
 </html>
