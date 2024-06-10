@@ -8,15 +8,48 @@
 </head>
 <body>
     <div class="toolbar">
-        <button id="pencil" class="tool">Карандаш</button>
-        <button id="brush" class="tool">Пензлик</button>
-        <button id="eraser" class="tool">Стирачка</button>
-        <button id="fill" class="tool">Заливка</button>
-        <button id="eyedropper" class="tool">Пипетка</button>
-        <button id="line" class="tool">Лінія</button>
-        <button id="rectangle" class="tool">Прямокутник</button>
-        <button id="circle" class="tool">Коло</button>
-        <input type="color" id="color-picker">
+        <button id="pencil" class="tool">
+            <img src="icons/pencil.png" width="50px" height="50px">
+        </button>
+        <button id="brush" class="tool">
+            <img src="icons/brush.png" width="50px" height="50px">
+        </button>
+        <button id="eraser" class="tool">
+            <img src="icons/eraser.png" width="50px" height="50px">
+        </button>
+        <button id="fill" class="tool">
+            <img src="icons/fill.png" width="50px" height="50px">
+        </button>
+        <button id="eyedropper" class="tool">
+            <img src="icons/eyedropper.png" width="50px" height="50px">
+        </button>
+        <button id="line" class="tool">
+            <img src="icons/line.png" width="50px" height="50px">
+        </button>
+        <button id="rectangle" class="tool">
+            <img src="icons/rectangle.png" width="50px" height="50px">
+        </button>
+        <button id="circle" class="tool">
+            <img src="icons/circle.png" width="50px" height="50px">
+        </button>
+        <div class="slider-container">
+            <div class="slider-label">Ширина</div>
+            <input type="range" id="numberSlider" min="1" max="100" value="5" step="1" oninput="updateSliderValue()">
+            <input type="number" id="sliderValue" class="slider-input" min="1" max="100" value="5" oninput="updateInputValue()">
+        </div>
+        <div class="color-container">
+            <div class="color-label">Колір</div>
+            <input type="color" id="color-picker">
+        </div>
+        <button id="undo" class="tool">
+            <img src="icons/undo.png" alt="Undo" width="50px" height="50px">
+        </button>
+        <button id="clear" class="tool">
+            <img src="icons/clear.png" alt="Clear" width="50px" height="50px">
+        </button>
+        <button id="download" class="tool">
+            <img src="icons/download.png" alt="Download" width="50px" height="50px">
+        </button>
     </div>
     <canvas id="canvas"></canvas>
 
